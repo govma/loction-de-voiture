@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anciens Clients</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="login-container">
+        <h1>Connexion</h1>
+        <form id="loginForm">
+            <label for="username">Nom d'utilisateur</label>
+            <input type="text" id="username" placeholder="Entrez votre nom" required>
+            
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" placeholder="Entrez votre mot de passe" required>
+            
+            <button type="submit">Se connecter</button>
+        </form>
+        <div id="loading" class="hidden">
+            <div class="spinner"></div>
+            <p>Chargement...</p>
+        </div>
+     <!-- Section pour l'image -->
+        <div id="image-container">
+            <img id="dynamic-image" src="defaut.jpg" alt="Image par défaut" />
+        </div>
+    </div>
+    <script src="javaa.js"></script>
+</body>
+</html>

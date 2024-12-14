@@ -1,0 +1,168 @@
+/* Général */
+body {
+  font-family: 'Poppins', sans-serif; /* Ajout d'une police professionnelle */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f9f5f5; /* Couleur d'arrière-plan douce */
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #4CAF00, #2E7D40); /* Dégradé moderne */
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #FFC107; /* Jaune doré pour survol */
+}
+
+main h2, section h2 {
+  text-align: center;
+  color: #4CAF90;
+  margin-bottom: 20px;
+}
+
+/* Catalogue */
+#catalogue {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+#car-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.car-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.car-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.car-card h3 {
+  color: #2E7D32;
+  margin-bottom: 10px;
+}
+
+.car-card p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Formulaire */
+#formulaire {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+form input, form select, form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  background: #4CAF50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #2E7D32;
+}
+
+/* Contrat */
+#contrat {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+}
+
+#contract h3 {
+  text-align: center;
+  color: #4CAF50;
+}
+
+#print-contract {
+  display: block;
+  margin: 20px auto;
+  background: #FFC107;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#print-contract:hover {
+  background: #FFA000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #car-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .car-card {
+    width: 90%;
+  }
+
+  form input, form select, form button {
+    font-size: 0.9rem;
+  }
+}

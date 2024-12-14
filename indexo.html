@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location de Voitures</title>
+  <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body>
+  <header>
+    <h1>Location de Voitures Premium</h1>
+    <nav>
+      <a href="#home">Accueil</a>
+      <a href="#catalogue">Catalogue</a>
+      <a href="#formulaire">Formulaire de location</a>
+      <a href="#contrat">Contrat</a>
+	  <a href="anciens.html">Anciens Clients</a>
+
+    </nav>
+  </header>
+  <main id="home">
+    <section>
+     	 <h2>Bienvenue chez [Nom de l'entreprise]</h2>
+		 <center>
+      <p>Nous offrons les meilleures voitures pour vos besoins de transport.</p></center>
+    </section>
+  </main>
+  <section id="catalogue">
+    <h2>Catalogue des voitures</h2>
+    <div id="car-list">
+      <!-- Les voitures seront ajoutées dynamiquement -->
+    </div>
+  </section>
+  <section id="formulaire">
+    <h2>Formulaire de Location</h2>
+    <form id="rental-form">
+      <label>Nom du client : <input type="text" id="client-name" required></label>
+      <label>Numéro de permis : <input type="text" id="license-number" required></label>
+      <label>Numéro de carte nationale : <input type="text" id="national-id" required></label>
+      <label>Voiture : 
+        <select id="car-select"></select>
+      </label>
+      <label>Date de début : <input type="date" id="start-date" required></label>
+      <label>Date de fin : <input type="date" id="end-date" required></label>
+      <button type="submit">Enregistrer</button>
+    </form>
+  </section>
+  <section id="contrat">
+    <h2>Contrat de Location</h2>
+    <div id="contract">
+      <!-- Contrat généré dynamiquement -->
+    </div>
+    <button id="print-contract">Imprimer le Contrat</button>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
